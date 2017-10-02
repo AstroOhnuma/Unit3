@@ -5,4 +5,4 @@ total = 0
 for i in range(1,100001):
     total+= i
     if i%3==0 and i%10==0 and i%17==0:
-        print(total)
+print(total)
