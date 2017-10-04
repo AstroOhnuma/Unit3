@@ -3,6 +3,9 @@
 #warmup9.py - Capitalizing vowels in a word
 
 word = input('Enter a word: ')
-
 for ch in word:
-    print(ch.upper())
+    if ch in 'aeiouAEIOU':
+        print(ch.upper())
+    else:
+        print(ch.lower())
+
