@@ -20,9 +20,9 @@ door = RectangleAsset(40,60, blackoutline, red)
 for j in range(15):
     for i in range(20):
         Sprite(roof)
-        Sprite(house, (10+20*i,60+20*i))
-        Sprite(window, (20+20*i,70+20*i))
-        Sprite(window2, (140+20*i,70+20*i))
-        Sprite(door, (80+20*i,100+20*i))
+        Sprite(house, (10+20*i,60+20*j))
+        Sprite(window, (20+20*i,70+20*j))
+        Sprite(window2, (140+20*i,70+20*j))
+        Sprite(door, (80+20*i,100+20*j))
 App().run()
 
