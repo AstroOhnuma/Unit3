@@ -5,13 +5,24 @@
 from ggame import *
 
 red = Color(0xFF0000,1)
+tan = Color(0xFFB266,1)
+blue = Color(0x0080FF,1)
+black = Color(0x000000,1)
 
-dot = CircleAsset(20,LineStyle(1,red),red)
-triangle = PolygonAsset([(20,20), (30,10), (40,20)],LineStyle(1,red),red)
+blackoutline = LineStyle(1,black)
 
-for j in range(15):#prints the row 10 times
-    for i in range(20):#prints one row of dots
-        Sprite(dot,(20 + 50*i,20 + 50*j))
-Sprite(triangle)
+roof = PolygonAsset([(50,0), (250,120), (150,60)], blackoutline, red)
+house = RectangleAsset(180,100, blackoutline, tan)
+window = RectangleAsset(40,40, blackoutline, blue)
+window2 = RectangleAsset(40,40, blackoutline, blue)
+door = RectangleAsset(40,60, blackoutline, red)
+
+for j in range(15):
+    for i in range(20):
+        Sprite(roof)
+        Sprite(house, (60,120))
+        Sprite(window, (70,130))
+        Sprite(window2, (190,130))
+        Sprite(door, (130,160))
 App().run()
 
