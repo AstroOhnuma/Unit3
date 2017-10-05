@@ -11,7 +11,7 @@ black = Color(0x000000,1)
 
 blackoutline = LineStyle(1,black)
 
-roof = PolygonAsset([(50,60), (150,0), (250,60)], blackoutline, red)
+roof = PolygonAsset([(0,60), (100,0), (200,60)], blackoutline, red)
 house = RectangleAsset(180,100, blackoutline, tan)
 window = RectangleAsset(40,40, blackoutline, blue)
 window2 = RectangleAsset(40,40, blackoutline, blue)
@@ -20,9 +20,9 @@ door = RectangleAsset(40,60, blackoutline, red)
 for j in range(15):
     for i in range(20):
         Sprite(roof)
-        Sprite(house, (60,120))
-        Sprite(window, (70,130))
-        Sprite(window2, (190,130))
-        Sprite(door, (130,160))
+        Sprite(house, (10,60))
+        Sprite(window, (20,70))
+        Sprite(window2, (40,70))
+        Sprite(door, (30,90))
 App().run()
 
